@@ -1,5 +1,5 @@
 import React from "react";
-
+import AppBar from "../components/AppBar";
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,7 +9,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AppBar />
+        {children}
+      </body>
     </html>
   );
 }
